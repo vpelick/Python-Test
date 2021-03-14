@@ -1,0 +1,30 @@
+Test Scenario 1: Login to Team Shift using email and password
+	Given User Navigates to TeamShift platform
+	When User Clicks on Enter Button
+	And User fills data for email field
+	And User clicks next
+	And User fills data for password
+	And User clicks login
+	Then User should be logged in to teamshift home page
+	
+Test Scenario 2: Progress Bar  - No activities Completed
+	Given User is on home page from TeamShift platform
+	And User has completed 0 activities
+	When User clicks on progress Bar
+	Then Progress bar should be at 0% completition
+	And No activities should be completed
+
+Test Scenario 3: Progress Bar - Discover your Type
+	Given User starts assessment for knowing itself
+	When User finishes answering all information for figuring out personality
+	Then Progress bar should be update with percentage from finishing Dicover your Type assessment
+	And Dicover Your Type assessment should be marked as completed on the tasks activities
+
+Test Scenario 4:Progress Bar - Watch 3 Videos from learn something new topic
+	Given User finished assessment for knowing itself
+	And user is on profile page
+	When User clicks on 3 different videos
+	Then Progress bar should be updated
+	And Learn something new activity should be completed
+
+
